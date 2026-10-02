@@ -1,0 +1,144 @@
+/* =========================
+   勤怠レポート画面
+========================= */
+
+body {
+    background-color: #f0eff2;
+}
+
+h1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 30px;
+    font-size: 30px;
+    font-weight: 700;
+    border-left: 8px solid #000;
+    padding-left: 15px;
+}
+
+/* =========================
+   サマリー
+========================= */
+
+.summary {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.summary h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+}
+
+.summary li:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   月次推移
+========================= */
+
+.monthly {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.monthly h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.monthly table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.monthly th {
+    background-color: #fafafa;
+    color: #737373;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px;
+    border-bottom: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.monthly td {
+    padding: 16px;
+    text-align: center;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+}
+
+.monthly tr:last-child td {
+    border-bottom: none;
+}
+
+.monthly tr:hover {
+    background-color: #fafafa;
+}
+
+/* =========================
+   レスポンシブ
+========================= */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 95%;
+        font-size: 24px;
+    }
+
+    .summary,
+    .monthly {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .summary h2,
+    .monthly h2 {
+        font-size: 20px;
+    }
+
+    .summary li {
+        font-size: 14px;
+    }
+
+    .monthly {
+        overflow-x: auto;
+    }
+
+    .monthly table {
+        min-width: 700px;
+    }
+
+    .monthly th,
+    .monthly td {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+}
